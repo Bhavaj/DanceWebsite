@@ -1,0 +1,52 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index/js')
+
+block style 
+    style 
+        include ../static/style.css 
+
+block content 
+    
+
+    section#introSection  
+        div Welcome to MaDev's World 
+        div.small Eat Sleep Dance Repeat
+    
+    section#missionSection 
+        h2 Our mission
+        div.card 
+            h3 Dance Perfection
+            div.cardbox
+                div.cardImg
+                    a(href='/contactUs') #[img(src='../static/Dance1.jpg')] 
+                div.cardContent 
+                    p This is the best dance academy in the universe
+        div.card 
+            h3 Dance the way you like
+            div.cardbox 
+                div.cardImg
+                    img(src='../static/Dance2.jpg')
+                div.cardContent 
+                    p This is the best dance academy in the universe
+        div.card 
+            h3 Expert Teaching 
+            div.cardbox 
+                div.cardImg
+                    img(src='../static/Dance3.jpg')
+                div.cardContent 
+                    p This is the best dance academy in the universe
+    
+    section#sponsorSection 
+        H3 Our sponsors 
+        div#sponsors 
+            img(src='../static/sponsor1.png', class='spImage')
+            img(src='../static/sponsor2.png', class='spImage')
+            img(src='../static/sponsor3.png', class='vidImage')
+            img(src='../static/sponsor4.png', class='vidImage')
+    
+ 
+    
+    
+    

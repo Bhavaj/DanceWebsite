@@ -1,0 +1,22 @@
+extends base.pug
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/styleContact.css
+
+
+block scripts
+
+block content
+    div.container 
+        h1 Contact Us
+        form(action="/contactUs", method='post')
+            input(type='text', class="myInput",name='name',placeholder='Enter your name') 
+            input(type='phone', class="myInput",name='phone',placeholder='Enter your mobile number') 
+            input(type='email', class="myInput",name='email',placeholder='Enter your Email address') 
+            input(type='text', class="myInput",name='address',placeholder='Enter your permenant address') 
+            input(type='text', class="myInput",name='desc',placeholder='Enter your concern') 
+            button(class='btn', method='post')
+                |Submit
+

@@ -1,0 +1,25 @@
+//- layout.pug
+doctype html
+html
+  head
+    title MaDev Dance Academy
+    block style
+    block scripts
+      
+  body
+    nav#navbar
+        ul
+            div#logo 
+                img(src="../static/logo.png", alt="")
+                | MDA
+            li #[a(href='/home') Home] 
+            li #[a(href='#') About ]
+            li #[a(href='#') Services ]
+            li #[a(href='#') Class Info]
+            li #[a(href='/contactUs') Contact us ]
+    
+    block content
+
+    block footer 
+        footer#footer 
+            | Copyright © 2023 MaDevDanceAcademy.com All rights reserved    

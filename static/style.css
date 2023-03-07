@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Lobster&family=Titillium+Web&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 14px;
+    margin-right: 40px;
+}
+
+#logo img{
+    margin: 0;
+    height: 50px;
+    /* filter: invert(1); */
+}
+
+#navbar{
+    
+    top: 0;
+    left: 0;
+    background-color: red;
+    height: 50px;
+    border: 2px solild blue;
+    /* font-family: 'Kavoon', cursive; */
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+#navbar ul{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+
+#navbar li{
+    list-style: none;
+    margin: 10px 0px 10px 0px;
+    
+}
+
+
+#navbar li a{
+    font-size: 1.15rem;
+    margin: 5px;
+    color: white;
+    border-radius: 10px;
+    
+    text-decoration: none;
+    padding: 5px 15px;
+    
+}
+
+#navbar li a:hover{
+    background-color: white;
+    color: red;
+}
+
+#introSection::before{
+    content: '';
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: url('../static/bg.jpg') no-repeat center fixed;
+    background-size: cover;
+    
+    
+    
+    z-index: -1;
+}
+
+#introSection{
+    font-family: 'Kavoon', cursive;
+    padding-bottom: 90px;
+    color: white;
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 400px;
+    width: 100%;
+    
+
+
+}
+
+#introSection div.small{
+    font-size: 25px;
+}
+
+
+
+#missionSection{
+    height: 300px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    
+
+}
+#missionSection h2{
+    color: red;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    
+    font-size: 30px;
+    
+}
+
+.card{
+    border: 2px solid red;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+    width: 29%;
+    height: 218px;
+    margin: 15px 22px;
+}
+
+.card h3{
+    background-color: red;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 7px;
+}
+
+.cardbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardImg{
+    height: 162px;
+    padding: 0px 18px;
+
+}
+
+.cardImg a{
+    height: inherit;
+}
+
+.cardImg img{
+    height: inherit;
+    /* filter: invert(1); */
+}
+
+.cardContent{
+    color: red;
+    padding: 0px 0px;
+    margin: 5px;
+    font-family: 'Kavoon', cursive;
+
+}
+
+.cardContent p{
+    font-size: 1rem;
+
+}
+#sponsorSection{
+    
+    height: 300px;
+    background-color: #fceae5;
+
+}
+
+#sponsorSection h3{
+    color: red;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+#sponsors{
+    height: 120px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+#sponsors .spImage{
+    background: transparent;
+    height: 200px;
+    margin: 5px;
+}
+#sponsors .vidImage{
+    padding-top: 10px;
+    margin: 35px 5px;
+    height: 100px;
+}
+
+#footer{
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
