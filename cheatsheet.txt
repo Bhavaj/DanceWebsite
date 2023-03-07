@@ -1,0 +1,41 @@
+PRE-REQUISITE PROCESS
+
+1. create repository in github
+2. open project folder you want to upload left click and then open git bash here
+3. in git bash set name and email(one time process)
+    -- commands
+    -- git config --global user.name Bhavaj
+    -- git config --global user.email "bhavajbankai@gmail.com"
+4. go to account settings in git hub 
+  --> SSH and GPG keys
+  --> Generate new SSH key
+  --> paste the following in git bash "ssh-keygen -t ed25519 -C "your_email@example.com""
+  --> your key will be saved at /c/Users/BhavajDragneel/.ssh/id_ed25519.pub
+  --> use cat /c/Users/BhavajDragneel/.ssh/id_ed25519.pub in git bash
+  --> following ssh key will be displayed copy it
+      *ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM0zn63aJQYkHw1syCAwC1QTUBtlUldk9xubs1cTww7h bhavajbankai@gmail.com
+  --> copy that and add in git hub website generate new ssh key
+
+  * passphrase: ':'
+
+ 
+
+<------- ACTUAL PROCESS STARTS FROM HERE --------->
+
+Step 1: touch .gitignore (run this command in gitbash)
+        --> open the .gitignore document and include names of large folders like 'node_modules'
+  	--> for folder names include '/' at the end like 'node_modules/'
+
+Step 2: git init
+
+Step 3: git add .    (adds to staging server)
+
+Step 4: git commit -m "Initial commit"   (takes snapshat and commit data)
+
+Step 5: click on ssh  in github website and copy your repository link "git@github.com:Bhavaj/DanceWebsite.git"
+
+Step 6: git remote add origin git@github.com:Bhavaj/DanceWebsite.git
+
+Step 7: git push origin master  (push the project folder to git hub repository)
+ 
+
